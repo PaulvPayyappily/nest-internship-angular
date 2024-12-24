@@ -1,0 +1,68 @@
+<app-nav-bar></app-nav-bar>
+
+<div *ngIf="product" class="container py-8 mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+    <div class="flex justify-center items-center">
+      <img [src]="product.images[0]" alt="{{ product.title }}" style="height: 500px;" class="rounded-lg shadow-xl max-w-full h object-cover">
+    </div>
+    
+
+    <div>
+      <h2 class="text-3xl font-bold text-gray-800">{{ product.title }}</h2>
+      <div class="mt-4 text-lg text-gray-600">
+        <p><strong>Category:</strong> {{ product.category }}</p>
+        <p><strong>Brand:</strong> {{ product.brand }}</p>
+        <p><strong>Discount:</strong> <span class="text-red-500" style="margin-left: 3px;">{{ product.discountPercentage }}%</span></p>
+        <p><strong>Rating:</strong> <span class="text-yellow-500" style="margin-left: 3px;">{{ product.rating }} / 5</span></p>
+        <p><strong>Stock Status:</strong> <span class="badge bg-green-500 text-white p-1" style="margin-left: 3px;border-radius: 3px;">{{ product.availabilityStatus }}</span></p>
+      </div>
+      <br>
+
+      <div class="flex items-center ">
+        <p style="font-size: 1.2rem;margin-right: 20px;"><strong>Price:</strong> <span class="text-green-600 font-semibold">${{ product.price }}</span></p>
+        <a  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" routerLink="">Add to cart</a>
+    </div>
+
+    <br>
+    <hr>
+
+
+      <div class="mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">Description</h4>
+        <p class="text-gray-600 mt-2">{{ product.description }}</p>
+      </div>
+
+      <div class="mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">Dimensions</h4>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li>Width: {{ product.dimensions.width }} cm</li>
+          <li>Height: {{ product.dimensions.height }} cm</li>
+          <li>Depth: {{ product.dimensions.depth }} cm</li>
+        </ul>
+      </div>
+
+
+      <div class="mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">Warranty Information</h4>
+        <p class="text-gray-600 mt-2">{{ product.warrantyInformation }}</p>
+      </div>
+
+      <div class="mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">Shipping Information</h4>
+        <p class="text-gray-600 mt-2">{{ product.shippingInformation }}</p>
+      </div>
+
+
+      <div class="mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">Return Policy</h4>
+        <p class="text-gray-600 mt-2">{{ product.returnPolicy }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+

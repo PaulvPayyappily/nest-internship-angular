@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="container py-3 mt-3 mb-3">
+
+    <div class="flex flex-wrap gap-5">
+
+        @for (item of data; track item.id) {
+
+    <app-cards [data]="item"></app-cards>
+ }
+</div>
+
+</div>
+
+<app-footer></app-footer>
+    
+
+
+
+

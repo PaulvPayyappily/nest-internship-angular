@@ -1,0 +1,43 @@
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-meta p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .description, .dimensions, .warranty-info, .shipping-info, .return-policy {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .description h4, .dimensions h4, .warranty-info h4, .shipping-info h4, .return-policy h4 {
+    font-size: 1.5rem;
+    color: #5f6368;
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.2rem;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  .stock-status .badge {
+    font-size: 1rem;
+  }
