@@ -1,0 +1,20 @@
+<app-navbar [data]="navHome"></app-navbar>
+
+
+<owl-carousel-o [options]="customOptions" >
+
+  <ng-container *ngFor="let slide of carouselHome">
+    <ng-template carouselSlide id="slide.id">
+      <img [src]="slide.image"  [title]="slide.title" style="object-fit: fill;" height="700px">
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+
+<app-about [data]="aboutHome"></app-about>
+
+<app-footer [data]="footerHome"></app-footer>
+
+
+  
+

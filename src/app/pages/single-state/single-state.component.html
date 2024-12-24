@@ -1,0 +1,21 @@
+<app-navbar [data]="navSinglestate"></app-navbar>
+
+<section class="main" style="background-image: image-set('{{data.image}}'); background-size: cover;
+background-position: center;
+color: white;
+height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;" >
+    <div>
+      <h1 class="display-4">Welcome to {{data.title}}</h1>
+      <p class="lead">{{data.p1}}</p>
+    </div>
+</section>
+
+<app-state-discription [data]="data"></app-state-discription>
+
+
+<app-footer [data]="footerSinglestate" ></app-footer>
+
