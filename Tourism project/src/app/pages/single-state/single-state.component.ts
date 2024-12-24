@@ -38,7 +38,7 @@ export class SingleStateComponent {
   
  this.titleService.setTitle(`${this.data.title} Tourism`)
 
-  this.navSinglestate={title:`Dicover ${this.data.title}`}
+  this.navSinglestate={title:`Discover ${this.data.title}`}
 
   this.footerSinglestate={title:`${this.data.title} Tourism`}
 
